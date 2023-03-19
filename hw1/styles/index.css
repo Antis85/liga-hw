@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:100,300,400,500,600,700,800,900&amp;subset=cyrillic,cyrillic-ext,latin-ext');
+@import 'page-header.css';
+@import 'page-footer.css';
+@import 'contacts-list.css';
+@import 'page-header.css';
+@import 'content-card.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter", "Arial", sans-serif;
+}
+
+body {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+ul,
+p,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  background-color: #1e1e1e;
+}
+
+.main-top-wrapper {
+  background-color: #f9f9f9;
+  padding: 125px 65px 65px 65px;
+}
+
+.main-bottom-wrapper {
+  background-color: #828282;
+  padding: 95px 48px 64px 65px;
+}
+
+.main-text {
+  color: #f2f2f2;
+}
+
+@media (max-width: 320px) {
+  .page-main {
+    min-width: 320px;
+  }
+}
+
+@media (min-width: 320px) {
+  .page-main {
+    display: grid;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .page-main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(5, minmax(0, auto)) minmax(0, 1fr) minmax(0, auto);
+    grid-template-areas:
+      "top     top"
+      "bottom  bottom"
+      "hat     hat"
+      "coffee  brown"
+      "curly   herb"
+      "room    red"
+      "room    man"
+    ;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 992px) {
+  .page-main {
+    grid-template-columns: minmax(0, 2fr) repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, auto)) minmax(0, 1fr) minmax(0, auto);
+    grid-template-areas:
+      "top      hat     hat"
+      "top      coffee   brown"
+      "bottom      curly   herb"
+      "bottom   room    red"
+      "bottom   room    man"
+    ;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .page-main {
+    grid-template-rows: minmax(0, 2fr) minmax(0, 1fr) minmax(0, auto) minmax(0, 1fr) minmax(0, auto);
+    grid-template-columns: minmax(0, 15.5fr) minmax(0, 12.9fr) minmax(0, 17.7fr) minmax(0, 18.1fr);
+    grid-template-areas:
+      "top      top       top     top"
+      "bottom   bottom    bottom  bottom"
+      "hat      hat       curly   herb"
+      "hat      hat       room    red"
+      "coffee   brown     room    man"
+    ;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-main {
+    max-width: 1900px;
+    margin: auto;
+    grid-template-rows: minmax(0, auto) minmax(0, 1fr) minmax(0, auto);
+    grid-template-columns: minmax(0, 35.8fr) minmax(0, 15.5fr) minmax(0, 12.9fr) minmax(0, 17.7fr) minmax(0, 18.1fr);
+    grid-template-areas:
+      "top    hat     hat     curly   herb"
+      "top    hat     hat     room    red"
+      "bottom coffee  brown   room    man";
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

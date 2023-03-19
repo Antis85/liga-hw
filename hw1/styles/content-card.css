@@ -1,0 +1,99 @@
+.content-card {
+  word-wrap: break-word;
+}
+
+.content-card__wrapper {
+  width: 100%;
+}
+
+.content-card__image {
+  width: 100%;
+  display: block;
+}
+
+.content--hat>.content-card__wrapper {
+  background-color: #828282;
+}
+
+.content--coffee>.content-card__wrapper {
+  background-color: #f2f2f2;
+}
+
+.content--curly>.content-card__wrapper {
+  background-color: #e0e0e0;
+}
+
+.content--room>.content-card__wrapper {
+  background-color: #4f4f4f;
+}
+
+.content--herb>.content-card__wrapper {
+  background-color: #bdbdbd;
+}
+
+.content--man>.content-card__wrapper {
+  background-color: #bdbdbd;
+}
+
+.content--bg-brown>.content-card__wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #a6806b;
+  ;
+}
+
+.content--bg-red>.content-card__wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #a61c1c;
+}
+
+@media (max-width: 319.5px) {
+  .content--bg-brown>.content-card__wrapper {
+    height: 247px;
+  }
+
+  .content--bg-red>.content-card__wrapper {
+    height: 185px;
+  }
+}
+
+.content--top {
+  grid-area: top;
+}
+
+.content--bottom {
+  grid-area: bottom;
+}
+
+.content--hat {
+  grid-area: hat;
+}
+
+.content--coffee {
+  grid-area: coffee;
+}
+
+.content--bg-brown {
+  grid-area: brown;
+}
+
+.content--curly {
+  grid-area: curly;
+}
+
+.content--room {
+  grid-area: room;
+}
+
+.content--herb {
+  grid-area: herb;
+}
+
+.content--bg-red {
+  grid-area: red;
+}
+
+.content--man {
+  grid-area: man;
+}
